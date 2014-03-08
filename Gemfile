@@ -24,6 +24,8 @@ gem 'mocha', :group => 'test', :require => false
 gem 'shoulda', :group => 'test'
 gem 'rack-test', :require => 'rack/test', :group => 'test'
 
+gem 'bootstrap-sass'
+
 # Padrino Stable Gem
 gem 'padrino', '0.12.0'
 

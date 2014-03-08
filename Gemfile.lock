@@ -8,6 +8,8 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     atomic (1.1.15)
+    bootstrap-sass (3.1.1.0)
+      sass (~> 3.2)
     http_router (0.11.1)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
@@ -92,6 +94,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
   mocha
   padrino (= 0.12.0)
   rack-test
