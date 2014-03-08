@@ -5,6 +5,7 @@ module ScssInitializer
     # Store SCSS files (by default) within 'app/stylesheets'.
     require 'sass/plugin/rack'
     Sass::Plugin.options[:syntax] = :scss
+    Sass::Plugin.options[:style] = :compressed
     Sass::Plugin.options[:template_location] = Padrino.root("app/css")
     Sass::Plugin.options[:css_location] = Padrino.root("public/css")
     app.use Sass::Plugin::Rack

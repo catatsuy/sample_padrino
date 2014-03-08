@@ -2,7 +2,7 @@ module SampleBlog
   class App < Padrino::Application
     register ScssInitializer
     register Padrino::Rendering
-    register Padrino::Mailer
+    # register Padrino::Mailer
     register Padrino::Helpers
 
     enable :sessions
@@ -40,8 +40,11 @@ module SampleBlog
     # set :locale_path, 'bar'       # Set path for I18n translations (default your_apps_root_path/locale)
     # disable :sessions             # Disabled sessions by default (enable if needed)
     # disable :flash                # Disables sinatra-flash (enabled by default if Sinatra::Flash is defined)
-    # layout  :my_layout            # Layout can be in views/layouts/foo.ext or views/foo.ext (default :application)
+    # Layout can be in views/layouts/layout.ext or views/layout.ext
+    layout  :layout
     #
+    set :css_asset_folder, 'css'
+    set :js_asset_folder, 'js'
 
     ##
     # You can configure for a specified environment like:
