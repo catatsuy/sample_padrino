@@ -1,0 +1,9 @@
+---
+:orm: sequel
+:test: shoulda
+:mock: mocha
+:script: none
+:renderer: slim
+:stylesheet: scss
+:namespace: SampleBlog
+:migration_format: number
